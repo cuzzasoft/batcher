@@ -19,6 +19,8 @@ go get github.com/cuzzasoft/batcher
 
 ## Usage
 
+Try it out at the [Go Playground](https://go.dev/play/p/d1dYRSCmVKw).
+
 ### Start a new batcher
 
 Provide your own `BatchProcessor` implementation and configure the batcher with the desired options.
