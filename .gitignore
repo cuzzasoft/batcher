@@ -1,0 +1,32 @@
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# GoLand IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Dependency directories
+vendor/
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
