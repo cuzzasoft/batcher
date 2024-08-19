@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/cuzzasoft/batcher"
+	microbatcher "github.com/cuzzasoft/batcher"
 	"log/slog"
 	"os"
 	"time"
@@ -25,7 +25,6 @@ func (p *MyProcessor) ProcessBatch(jobs []microbatcher.Job) []microbatcher.JobRe
 }
 
 func main() {
-	//If you want extra logging, uncomment this line
 	slog.SetDefault(slog.New(slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{
 		Level: slog.LevelDebug,
 	})))
