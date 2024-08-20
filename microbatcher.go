@@ -60,7 +60,6 @@ func (b *JobBatch) Drain() []Job {
 	b.mu.Lock()
 	defer b.mu.Unlock()
 
-	// Create a copy of the jobs slice to return. This ensures that the batch is not modified while it is being exported.
 	jobs := make([]Job, len(b.jobs))
 	copy(jobs, b.jobs)
 
